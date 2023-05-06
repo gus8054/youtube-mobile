@@ -1,0 +1,42 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@font-face {
+  font-family: "KCCChassam";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-color: #0f0f0f;
+  --gray-1: #4f4f4f;
+  --gray-2: #8f8f8f;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "KCCChassam";
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}

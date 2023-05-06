@@ -1,0 +1,81 @@
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+/* logo */
+.logo__container {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo__img {
+  width: 2.5em;
+  height: auto;
+}
+.logo__text {
+  font-family: "Oswald", sans-serif;
+  width: max-content;
+  font-size: 1.5rem;
+}
+/* icons */
+.icons {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon {
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon:hover {
+  background-color: gray;
+}
+.icon > svg {
+  width: 100%;
+  height: 100%;
+}
+.user > img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+/* search box */
+.search__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.search__form {
+  align-self: stretch;
+  flex: 1 1;
+}
+.search__input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,139 @@
+.videoPage {
+  background-color: var(--bg-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.video__player-wrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+}
+.video__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video__extra-container {
+  flex: 1;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+.video__extra-container::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.video__text-content {
+  padding: 1rem;
+}
+.video__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+.video__view {
+  margin-top: 1rem;
+  color: var(--gray-1);
+  font-size: 1rem;
+}
+.video__detail {
+  color: white;
+  margin-left: 1rem;
+}
+.video__channel {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.channel__logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.channel__subscription {
+  margin-left: auto;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: var(--bg-color);
+  background-color: white;
+}
+.video__icon-wrapper-scroll {
+  margin-top: 1rem;
+  overflow: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+.video__icon-wrapper-scroll::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.video__icons {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.video__icon-wrapper {
+  width: max-content;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--gray-1);
+}
+.video__icon-wrapper svg {
+  font-size: 1.2rem;
+}
+.video__comment-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--gray-1);
+  border-radius: 1rem;
+}
+.video__comment-header span {
+  margin-left: 1rem;
+  color: var(--gray-2);
+}
+.comment-user-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.user-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: black;
+}
+.user-comment {
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: var(--gray-2);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+}

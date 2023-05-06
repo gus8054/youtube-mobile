@@ -1,0 +1,32 @@
+.nav {
+  margin-top: 1rem;
+  padding: 0rem 1rem;
+  overflow: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+.nav::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.nav__ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: max-content;
+  gap: 1rem;
+}
+
+.nav__icon {
+  padding: 0.3rem 1rem;
+  background-color: gray;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__icon:hover,
+.nav__icon:focus {
+  background-color: white;
+  color: var(--bg-color);
+}

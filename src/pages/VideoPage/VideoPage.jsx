@@ -17,8 +17,8 @@ function VideoPage() {
   const { currentVideo, relatedVideoList } = useLoaderData();
   const {
     id,
-    snippet: { publishedAt, channelTitle, title, description },
-    statistics: { viewCount, likeCount, dislikeCount, commentCount },
+    snippet: { publishedAt, channelTitle, title },
+    statistics: { viewCount, likeCount, commentCount },
   } = currentVideo;
   const view = useCalcView(viewCount);
   const term = useCalcTerm(publishedAt);
